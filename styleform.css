@@ -1,0 +1,23 @@
+.formulario [type="text"],
+[type="email"] {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(105, 101, 101, 0.897);
+    color: white;
+    border: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.formulario [type="submit"],
+[type="reset"] {
+    width: 150px;
+    height: 25px;
+    background-color: #00b6ee;
+    color: white;
+    border: none;
+
+}
