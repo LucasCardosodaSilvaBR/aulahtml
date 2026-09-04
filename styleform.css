@@ -1,0 +1,29 @@
+.formulario [type="text"],
+[type="email"] {
+    width: 300px;
+    height: 30px;
+    background-color: rgba(105, 101, 101, 0.897);
+    color: white;
+    border: white 1px solid;
+    font-family: Georgia, 'Times New Roman', Times, serifS;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.formulario [type="submit"],
+[type="reset"] {
+    width: 150px;
+    height: 30px;
+    background-color: #00b6ee;
+    color: white;
+    border: none;
+
+}
+
+fieldset{
+    background-color: blue;
+    
+}
