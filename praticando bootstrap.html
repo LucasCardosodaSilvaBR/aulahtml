@@ -1,20 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-   <div class="my-5 mx-3"><p class="p-4">XXXXXX</p></div>
-   <div class="mx-auto" style="width:500px">YYYYY</div>
+    <style>
+        body {
+            background-color: rgb(225, 226, 226);
+            min-height: 100vh;
+        }
 
-   <!-- Uso básico -->
-<div class="container">
-Conteúdo centralizado com largura máxima
-</div>
-    
+        footer {
+            background-color: blue;
+            height: 90px;
+            color: white;
+            text-align: right;
+            font-size: 25px;
+            padding-right: 20px;
+            padding-top: 10px;
+            
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: blue;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navegação</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ação 1</a></li>
+                            <li><a class="dropdown-item" href="#">Ação 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ação extra</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Desabilitado</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Digite a sua busca"
+                        aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit"
+                        style="background-color: greenyellow; color: black; font-weight: bold;">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h1 style="margin-top: 10px; margin-left: 10px;">Site de Roupas</h1>
+
+    <div class="container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="imagens/imagem-camisas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisas/Blusas</h5>
+                        <p class="card-text">Nessa sessão você encontrará camisas de diferentes tamanhos.</p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="imagens/imagem-meias.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Meias</h5>
+                        <p class="card-text">Sessão de meias de diferentes cores e tamanhos.</p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img src="imagens/imagem-sapatos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sapatos</h5>
+                        <p class="card-text">Nessa sessão apresenta tanto sapatos masculinos quanto os femininos.</p>
+                        <a href="#" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
+<footer style="margin-top: 50px;"><p>&copy; 2026 Loja. Todos os direitos reservados.</p></footer>
+
 </html>
