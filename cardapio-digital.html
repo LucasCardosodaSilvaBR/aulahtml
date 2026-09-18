@@ -10,10 +10,10 @@
 
         <style>
             body{
-                background-color: rgb(14, 13, 13);
-                color: rgb(248, 244, 3);
+                background-color: rgb(14, 13, 13); /** Cor de fundo do site **/
+                color: rgb(248, 244, 3); /** Cor dos textos do site **/
             }
-            footer {
+            footer { /** Estilização do rodapé **/
             background-color: red;
             height: 120px;
             color: rgb(248, 244, 3);
@@ -29,11 +29,11 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: red;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: red;"> <!-- Início da barra de navegação -->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="imagens/icone-lanchonete.png" alt="" style="height: 40px;">
+                <img src="imagens/icone-lanchonete.png" alt="" style="height: 40px;"> <!-- Ícone do site -->
                 Lanchonete
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,45 +41,46 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Conteudos da barra de navegação -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
                     
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown"> <!--Dropdown-->
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="color: white;">
                             Login
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Entrar</a></li>
+                            <li><a class="dropdown-item" href="#">Entrar</a></li> <!-- Item 1 -->
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr class="dropdown-divider"> <!-- Divisor de itens -->
                             </li>
-                            <li><a class="dropdown-item" href="#">Criar Conta</a></li>
+                            <li><a class="dropdown-item" href="#">Criar Conta</a></li> <!-- Item 2 -->
                         </ul>
                     </li>
                 </ul>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4"> <!--Div usada para ajustar o tamanho da barra de pesquisa -->
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurar alimentos" aria-label="Search" />
+                    <input class="form-control me-2" type="search" placeholder="Procurar alimentos" aria-label="Search" /> <!--Barra de pesquisa-->
                     <button class="btn btn-outline-success" type="submit"
-                        style="background-color: green; color: white;">Buscar</button>
+                        style="background-color: green; color: white;">Buscar</button> <!--Botão de busca-->
                 </form>
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> <!-- Fim da barra de navegação -->
 
     <h1 class="pt-3 ps-3">Cardápio Digital</h1>
 
     <h2 class="pt-3 ps-3">Lanches</h2>
     
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid"> <!--Container de elementos-->
+        <div class="row"> <!--Classe para deixar os cards lado a lado-->
+            <!--Usado a classe de coluna para alinhar os cards com espaçamento-->
             <!-- Card 1 -->
-            <div class="col-sm-3">
+            <div class="col-sm-3"> 
                 <div class="card" style="width: 20rem;">
                     <img src="imagens/imagem-pizza.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -130,8 +131,9 @@
 
     <h2 class="ps-3 pt-5">Sobremesas</h2>
 
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid"> <!--Container de elementos-->
+        <div class="row"> <!--Classe para deixar os cards lado a lado-->
+            <!--Usado a classe de coluna para alinhar os cards com espaçamento-->
             <!-- Card 1 -->
             <div class="col-sm-3">
                 <div class="card" style="width: 20rem;">
@@ -167,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Card 3 -->
+            <!-- Card 4 -->
             <div class="col-sm-3">
                 <div class="card" style="width: 20rem;">
                     <img src="imagens/imagem-brigadeiro.jpg" class="card-img-top" alt="...">
@@ -185,10 +187,10 @@
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> <!--Script para ativar a interatividade dos componentes, como o Dropdown-->
 </body>
 
-<footer><p>&copy; 2026 Lanchonete. Todos os direitos reservados.</p>
+<footer><p>&copy; 2026 Lanchonete. Todos os direitos reservados.</p> <!--Rodapé do site-->
 Aluno: Lucas Cardoso
 </footer>
 
